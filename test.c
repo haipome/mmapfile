@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	struct mmap_f f;
 	mmap_f_open(argv[1], &f);
 	
-	*((char *)f.p) = 'f';
+	*((char *)f.p) += 1;
 	
 	mmap_f_close(&f);
 	
