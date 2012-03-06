@@ -71,7 +71,7 @@ int mmap_f_close(struct mmap_f * mem)
 #ifdef DEBUG
 		handle_error("close file");
 #endif
-	return -1;
+		return -1;
 	}
 	
 	return 0;
