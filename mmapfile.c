@@ -15,6 +15,9 @@
 
 int mmap_f_open(const char * file, struct mmap_f * mem)
 {
+	if (!file || !mem)
+		return -1;
+	
 	int fd;
 	size_t len;
 	char *addr;
@@ -51,6 +54,9 @@ int mmap_f_open(const char * file, struct mmap_f * mem)
 
 int mmap_f_close(struct mmap_f * mem)
 {
+	if (!mem)
+		return -1;
+	
 	int fd = mem->fd;
 	char *p = mem->p;
 	size_t len = mem->len;
