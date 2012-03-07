@@ -1,1 +1,1 @@
-Use mmap, munmap and msync system call to operate file in memory with Higher Performance
+Use mmap, munmap and msync system call to random access file in memory with Higher Performance
